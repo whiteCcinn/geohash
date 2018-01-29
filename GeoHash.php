@@ -121,7 +121,6 @@ class GeoHash
      */
     private function base32Encode($bits)
     {
-        // 对齐5的倍数，进行base32转码
         $length = strlen($bits);
         $mod    = $length % 5;
         if ($mod > 0) {
