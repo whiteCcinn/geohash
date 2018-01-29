@@ -27,7 +27,7 @@ $hashCodeLength = 10;
 
 $geohash = new GeoHash($hashCodeLength);
 
-var_dump($geohash->around(113.314748, 23.125851, $interceptLength));
+var_dump($geohash->around(113.314748, 23.125851));
 
 // Search nearby 20 meters
 $interceptLength = 8;
