@@ -1,24 +1,5 @@
-# geohash
+<?php
 
-Class libraries implemented using PHP based on GeoHash algorithms.
-
-For details, please refer to the blog （Chinese）:
-
-https://usblog.crazylaw.cn/index.php/archives/324/
-
-## Usage
-
-Three API methods are provided.
-
-- `around($lng, $lat, $interceptLength = 0)`  Convert the HashCode in the 9 regions of the longitude and latitude.
-
-- `encode($lng, $lat, $interceptLength = 0)`  Converts HashCode to the specified latitude and longitude.
-
-- `distance($centerLng, $centerLat, $pointLng, $pointLat, $lenType = 1, $decimal = 2)`  Calculate the distance between two latitude and longitude.
-
-example：
-
-```php
 require_once 'GeoHash.php';
 
 // The base hashcode length must be a multiple of 5, otherwise it will automatically be filled to a multiple of 5.
@@ -42,4 +23,3 @@ if (in_array($point, $around)) {
 }
 
 var_dump('distance:' . $geohash->distance(113.314748, 23.125851, 113.314851, 23.125839) . 'm');
-```

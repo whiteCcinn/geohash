@@ -1,22 +1,22 @@
 # geohash
 
-Class libraries implemented using PHP based on GeoHash algorithms.
+基于GeoHash算法实现的类库。
 
-For details, please refer to the blog （Chinese）:
+具体详情详见博客：
 
 https://usblog.crazylaw.cn/index.php/archives/324/
 
-## Usage
+## 用法
 
-Three API methods are provided.
+提供了三个API方法
 
-- `around($lng, $lat, $interceptLength = 0)`  Convert the HashCode in the 9 regions of the longitude and latitude.
+- `around($lng, $lat, $interceptLength = 0)` 转换该经纬度9个区域的HashCode
 
-- `encode($lng, $lat, $interceptLength = 0)`  Converts HashCode to the specified latitude and longitude.
+- `encode($lng, $lat, $interceptLength = 0)` 对指定的经纬度转换HashCode
 
-- `distance($centerLng, $centerLat, $pointLng, $pointLat, $lenType = 1, $decimal = 2)`  Calculate the distance between two latitude and longitude.
+- `distance($centerLng, $centerLat, $pointLng, $pointLat, $lenType = 1, $decimal = 2)` 计算两个经纬度之间的距离
 
-example：
+例子：
 
 ```php
 require_once 'GeoHash.php';
