@@ -1,0 +1,12 @@
+{
+    "name": "ccinn/geohash",
+    "description": "Class libraries implemented using PHP based on GeoHash algorithms.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "whiteCcinn",
+            "email": "471113744@qq.com"
+        }
+    ],
+    "require": {}
+}
