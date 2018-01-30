@@ -19,15 +19,15 @@ https://usblog.crazylaw.cn/index.php/archives/324/
 例子：
 
 ```php
-require_once 'GeoHash.php';
+require_once 'vendor/autoload.php';
 
 // The base hashcode length must be a multiple of 5, otherwise it will automatically be filled to a multiple of 5.
 // The longer the base length of hashcode is, the more options are available to intercept, and the longer it is recommended. 10 is usually enough.
 $hashCodeLength = 10;
 
-$geohash = new GeoHash($hashCodeLength);
+$geohash = new ccinn\GeoHash($hashCodeLength);
 
-var_dump($geohash->around(113.314748, 23.125851, $interceptLength));
+var_dump($geohash->around(113.314748, 23.125851));
 
 // Search nearby 20 meters
 $interceptLength = 8;

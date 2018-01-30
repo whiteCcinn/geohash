@@ -8,5 +8,10 @@
             "email": "471113744@qq.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ccinn\\": "src/"
+        }
+    }
 }
